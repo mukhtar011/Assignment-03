@@ -5,6 +5,6 @@ void main(){
   print('The Negative List is: $negativeList');
 }
 List<int> filterNegativeNumber(List<int> originalList){
-List<int> negativeList = originalList.where((number) => number >= 0).toList();
+List<int> negativeList = originalList.where((number) => number <= 0).toList();
 return negativeList;
 }
